@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"TT hoves", sans-serif;
+}
+.firstpage{
+    padding: 37px 121px 160px;
+}
+.logo{
+    width: 295px;
+    margin-bottom: 85px;
+}
+.info{
+    display: flex;
+    gap: 30px 161px;
+    flex-wrap: wrap;
+    margin-bottom: 78px;
+}
+.subtitle{
+    font-size: 21px;
+    font-weight: 700;
+}
+h1{
+    font-size: 80px;
+    font-family: 'Chava', sans-serif;
+    margin-bottom: 40px;
+}
+.description{
+    font-size: 27px;
+    max-width: 930px;
+    line-height: 140%;
+    margin-bottom: 20px;
+}
+
+.secondpage{
+    padding: 0 120px 160px;
+}
+
+h2{
+    font-size: 58px;
+    font-weight: 500;
+    line-height: 68.32px;
+    text-transform: uppercase;
+    margin-right: 450px; 
+    margin-bottom: 41px;
+    /* по поводу марджин райт написала от балды, чтобы строка перенеслась */
+}
+
+.backend{
+    max-width: 450px;
+    margin-bottom: 57px;
+}
+
+.student{
+    max-width: 400px;
+    margin-bottom: 61px;
+}
+
+
+.firstblock{
+    display: flex;
+    gap: 70px;
+}
+.secondblock{
+    display: flex;
+    gap: 88px;
+}
+.facemoji-3{
+width: 192px;
+height: 192px;
+}
+.facemoji-4{
+width: 238px;
+height: 238px;
+}
