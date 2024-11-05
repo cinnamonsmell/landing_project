@@ -72,24 +72,38 @@ h2 {
   text-transform: uppercase;
 }
 
-#courseFor {
-  max-width: 770px;
-  margin-bottom: 41px;
+.courseFor h2 {
+  max-width: 710px;
+  margin-bottom: calc(40px + (90 - 40) * ((100vw - 375px) / (1280 - 375)));
 }
 
 h5 {
+  font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
+  font-weight: 600;
+  line-height: 140%;
   text-transform: uppercase;
+  margin: 10px 0 20px 0;
 }
 
 .profession {
   display: flex;
-  gap: 70px;
+  gap: 88px;
   flex-wrap: wrap;
 }
 
 .face {
   max-width: 450px;
-  margin-bottom: 57px;
+  margin-bottom: calc(40px + (52 - 40) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.face img {
+  max-width: 100%;
+}
+
+.face p {
+font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
+font-weight: 400;
+line-height: 140%;
 }
 
 #facemoji-3 {
@@ -98,8 +112,8 @@ h5 {
 }
 
 #facemoji-4 {
-  width: 230px;
-  height: 230px;
+  width: 192px;
+  height: 192px;
 }
 
 .purpleBg {
@@ -153,7 +167,7 @@ h3 {
 .coolTeacher {
   flex-basis: 240px;
   flex-grow: 1;
-  max-width: 350px;
+  max-width: 400px;
 }
 
 .coolTeacher img {
@@ -175,14 +189,20 @@ h4 {
   font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
   font-weight: 400;
   line-height: 140%;
+
   margin-top: 20px;
   margin-bottom: calc(40px + (90 - 40) * ((100vw - 375px) / (1280 - 375)));
 }
 
 .experience {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between
 }
+
+.bioText > :nth-child(4) {
+  margin-top: calc(30px + (40 - 30) * ((100vw - 375px) / (1280 - 375)));
+}
+
 
 .exp {
   width: calc(156px + (250 - 156) * ((100vw - 375px) / (1280 - 375)));
@@ -202,14 +222,16 @@ h4 {
 
 .diploma {
   display: grid;
-  grid-template-columns: calc(330px + (430 - 330) * ((100vw - 375px) / (1280 - 375)));
+  grid-template-columns: 1fr 2fr;
   grid-template-rows: auto auto;
   gap: 20px;
+
+  align-items: start;
 }
 
 .diploma img {
-    width: 100%;
-    grid-row: 1/3;
+  width: 100%;
+  grid-row: 1 / 3;
 }
 
 .aboutUs {
@@ -241,17 +263,17 @@ span {
 }
 
 @media (max-width: 710px) {
-    .diploma {
-        grid-template-columns: 1fr;
-    }
+  .diploma {
+      grid-template-columns: 1fr;
+  }
 
-    .diploma img {
-        grid-row: 2/3;
-    }
+  .diploma img {
+      grid-row: 2/3;
+  }
 
-    .aboutUs {
-        grid-template-columns: 1fr;
-    }
+  .aboutUs {
+      grid-template-columns: 1fr;
+  }
 }
 
 

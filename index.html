@@ -38,8 +38,8 @@
       </div>
     </section>
 
-    <section>
-      <h2 id="courseFor">Этот курс для тебя, если ты...</h2>
+    <section class="courseFor">
+      <h2>Этот курс для тебя, если ты...</h2>
       <div class="profession">
         <div class="face">
           <img src="./img/backend.png" id="facemoji-1" />
@@ -113,8 +113,7 @@
         <div class="bioText">
           <h4>Юрий Каграманян</h4>
           <p>
-            Практикующий преподаватель с опытом работы в сфере веб
-            программирования
+            Практикующий преподаватель с опытом работы в сфере веб программирования
           </p>
           <div class="experience">
             <div class="exp">
@@ -176,30 +175,40 @@
       </div>
     </section>
 
-    <section>
-      </div class="diploma">
-      <img src="./img/certificate.png">
-      <h2>диплом об окончании курса</h2>
-      <p>Он дополнит твое портфолио и выгодно выделит тебя на собеседовании в компанию мечты</p>
-      </div>
+  </section>
+  <section class="program">
+    <div class="programBorder">
+      <h2>Программа курса</h2>
+      <ul class="lessons">
+        <li class="lesson">Урок №1: Знакомство с html, css, js и разница между ними</li>
+        <li class="lesson">Урок №2: Виды сайтов и первые термины</li>
+        <li class="lesson">Урок №3: CSS - базовые стили и их подключение. Палитра</li>
+        <li class="lesson">Урок №4: HTML [Таблицы]</li>
+        <li class="lesson">Урок №5: HTML [Формы]</li>
+        <li class="lesson">Урок №6: CSS [Intermediate]</li>
+      </ul>
+      <button class="purpleBg desktop">Получить полную программу курса</button>
+    </div>
+   <button class="purpleBg mobile">Получить полную программу курса</button>
+  </section>
+
+    <section class="diploma">
+        <img src="./img/certificate.png" alt="Диплом">
+        <h2>диплом об окончании курса</h2>
+        <p>Он дополнит твое портфолио и выгодно выделит тебя на собеседовании в компанию мечты</p>
     </section>
 
-    <section>
-
+    <section class="howMuch">
       <h2>Сколько может зарабатывать Веб-Верстальщик?</h2>
-      <div class="howMuch">
-        <p>По данным сайта hh.uz большие компании готовы платить начинающим Верстальщикам от 300$. Тебе лишь нужно
-          набираться опыта и твой доход будет расти с каждым разом . А мы готовы тебе помочь в этом!</p>
-      </div>
-      <img src="./img/hh.png" alt="">
+      <p>По данным сайта hh.uz большие компании готовы платить начинающим Верстальщикам от 300$. Тебе лишь нужно
+         набираться опыта и твой доход будет расти с каждым разом . А мы готовы тебе помочь в этом!</p>
+      <img src="./img/hh.png" alt="Вакансии">
     </section>
 
     <section>
       <h2>Кроме этого тебя ждут:</h2>
       <div class="bonus">
-        <div class="studentBox">
-          <img src="./img/pic_student-box.png" id="merchBox">
-        </div>
+        <img src="./img/pic_student-box.png" id="studentBox">
         <div class="bonusText">
           <p>150$ от наших партнёров</p>
           <p>Компьютер для каждого студента со всеми необходимыми программами</p>
@@ -207,24 +216,57 @@
             партнерские промо-коды</p>
         </div>
       </div>
+
+    <section>
+      <h2>Отзывы наших студентов</h2>
+      <div class="feedback">
+        <div>
+          <img src="./img/icon_youtube.svg">
+          <p>Я пришел в Техникум чтобы сменить профессию на front-end разработчика и окончательно расстаться с
+            предыдущим местом работы. Пробуйте себя во всем, ничего не бойтесь и у вас всё получится!</p>
+          <div>
+            <img src="./img/Ruslan.png" alt="Руслан">
+            <span>Руслан Мухутдинов</span>
+          </div>
+        </div>
+        <div>
+          <img src="./img/icon_youtube.svg">
+          <p>Я выбрал курс веб-верстальщика, потому что мне это нравится и это круто. После окончания курса, за хорошую учебу, меня пригласили на стажировку в Техникум. Будущее за IT и я не жалею что выбрал эту сферу!</p>
+          <div>
+            <img src="./img/Iskander.png" alt="Искандер">
+            <span>Юлдашев Искандер</span>
+          </div>
+        </div>
+        <div>
+          <img src="./img/icon_youtube.svg">
+          <p>Я увидел что Техникум всех приглашает на бесплатную лекцию по программированию. Меня это заинтересовало, после лекции я понял, что это хороший старт для карьеры. После курса я планирую дальше развиваться и двигаться вперед в этой сфере.</p>
+          <div>
+            <img src="./img/Jahongir.png" alt="Джахонгир">
+            <span>Махмудов Джахонгир</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="program">
-      <div class="programBorder">
-        <h2>Программа курса</h2>
-        <ul class="lessons">
-          <li class="lesson"></li>
-          <li class="lesson"></li>
-          <li class="lesson"></li>
-          <li class="lesson"></li>
-          <li class="lesson"></li>
-          <li class="lesson"></li>
-        </ul>
-
+    <section class="purpleBg">
+      <h3>10% скидка действует</h3>
+      <div class="timer">
+        <div class="timerElem">
+          <div class="value" id="timerHours">00</div>
+          <div class="desc">часов</div>
+        </div>
+        <div class="timerElem">
+          <div class="value" id="timerMinutes">00</div>
+          <div class="desc">минут</div>
+        </div>
+        <div class="timerElem">
+          <div class="value" id="timerSeconds">00</div>
+          <div class="desc">секунд</div>
+        </div>
       </div>
 
+      <button class="secondary">Воспользоваться скидкой</button>
     </section>
-
 
     <section>
       <h2>Немного о нас</h2>
@@ -234,19 +276,18 @@
         <h5>Резиденты IT-парка и одна из самых успешных DIGITAL-школ в Узбекистане</h5>
 
         <div>
-          <div class="stat">>2500</div>
+          <div class="stat">> 2500</div>
           <span>выпускников</span>
         </div>
 
+        <div>
+          <div class="stat">10 направлений</div>
+          <span>обучения в сфере Digital</span>
         </div>
-         <div class="stat">10 направлений</div>
-         <span>обучения в сфере Digital</span>
-        </div>
+
       </div>
     </section>
 
-
-    <section></section>
     <section></section>
     <section></section>
 
