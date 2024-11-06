@@ -339,15 +339,15 @@ h4 {
 }
 
 .case {
-  width: 335px;
+  width: calc(328px + (335 - 328) * ((100vw - 375px) / (1280 - 375)));
   height: 484px;
   background-color: #F0F7FD;
   border-radius: 12px; 
 }
 
 .case > :nth-child(1) {
-  margin-top: 50px;
-  margin-left: 20px;
+  margin-top: calc(50px + (57 - 50) * ((100vw - 375px) / (1280 - 375)));
+  margin-left: calc(15px + (20 - 15) * ((100vw - 375px) / (1280 - 375)));
 }
 
 .initials {
@@ -368,6 +368,7 @@ h4 {
 
 .case p {
   font-size: 21px;
+  width: 295px;
   line-height: 140%;
   margin: 8px 20px 40px 20px;
 }
@@ -376,8 +377,6 @@ h4 {
   width: 305px;
   margin-bottom: 10px;
 }
-
-
 
 /* 11 экран. Таймер скидки???*/
 
