@@ -306,6 +306,80 @@ h4 {
   width: 100%;
 } 
 
+/* 9 экран. Кроме этого тебя ждут*/
+.bonus {
+  display: flex;
+}
+
+.bonus img {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.bonusText {
+  margin-top: 90px;
+}
+
+.bonusText p {
+  font-size: calc(18px + (21 - 18) * ((100vw - 375px) / (1280 - 375)));
+  line-height: 140%;
+  max-width: 100%;
+  padding-bottom: 25px;
+}
+
+/* 10 экран. Отзывы наших студентов*/
+
+.studentsFeedback h2 {
+  margin-bottom: calc(20px + (40 - 20) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.feedbackCase {
+  display: flex;
+  gap: 30px;
+}
+
+.case {
+  width: 335px;
+  height: 484px;
+  background-color: #F0F7FD;
+  border-radius: 12px; 
+}
+
+.case > :nth-child(1) {
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.initials {
+  font-size: calc(18px + (21 - 18) * ((100vw - 375px) / (1280 - 375)));
+  margin-left: calc(15px + (20 - 15) * ((100vw - 375px) / (1280 - 375)));
+  max-width: 170px;
+  display: flex;
+  gap: 12px;
+}
+
+.initials img {
+  border-radius: 40px
+}
+
+.initials div {
+  margin-top: 9px;
+}
+
+.case p {
+  font-size: 21px;
+  line-height: 140%;
+  margin: 8px 20px 40px 20px;
+}
+
+.case:nth-of-type(3) p {
+  width: 305px;
+  margin-bottom: 10px;
+}
+
+
+
+/* 11 экран. Таймер скидки???*/
 
 /* 12 экран. Немного о нас*/
 
@@ -339,6 +413,7 @@ span {
   line-height: 140%;
 }
 
+
 @media (max-width: 710px) {
   .diploma {
     grid-template-columns: 1fr;
@@ -366,5 +441,13 @@ span {
 
   .programBorder {
     padding: 40px 28px 0 20px;
+  }
+
+  .bonus {
+    flex-wrap: wrap;
+  }
+ 
+  .invisible {
+    display: none;
   }
 }
