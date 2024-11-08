@@ -244,7 +244,19 @@ h4 {
 
 .programBorder {
   border: 2px solid black;
-  padding: 81px 52px 35px 64px;
+  padding-top: calc(40px + (81 - 40) * ((100vw - 375px) / (1280 - 375)));
+  padding-bottom: calc(23px + (35 - 23) * ((100vw - 375px) / (1280 - 375)));
+  padding-right: calc(20px + (52 - 20) * ((100vw - 375px) / (1280 - 375)));
+  padding-left: calc(20px + (60 - 20) * ((100vw - 375px) / (1280 - 375)));
+
+  position: relative;
+}
+
+#corner {
+  width: calc(35px + (120 - 35) * ((100vw - 375px) / (1280 - 375)));
+  position: absolute;
+  top: -2px;
+  right: -2px;
 }
 
 .programBorder h2 {

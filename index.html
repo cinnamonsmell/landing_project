@@ -7,7 +7,10 @@
   <title>Landng</title>
   <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="./fonts/stylesheet.css" />
-  <link href="https://fonts.cdnfonts.com/css/chava" rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/chava" rel="stylesheet"/>
+  
+  <link rel="stylesheet" href="./splide/dist/css/splide.min.css">
+  <link rel="stylesheet" href="./splide/dist/css/themes/splide-default.min.css">
 </head>
 
 <body>
@@ -170,6 +173,7 @@
 
     <section class="program">
       <div class="programBorder">
+        <img src="./img/course-program-corner.svg" alt="corner" id="corner">
         <h2>Программа курса</h2>
        <ul class="lessons">
           <li class="lesson">Урок №1: Знакомство с html, css, js и разница между ними</li>
@@ -281,10 +285,39 @@
       </div>
     </section>
 
+    <section>
+      <h2>Всё ещё сомневаешься?</h2>
+      <p></p>
+      <div class="gallery"></div>
+
+        <section class="splide" aria-label="Splide Basic HTML Example">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide"><img src="./img/slider-1.png" alt=""></li>
+              <li class="splide__slide"><img src="./img/slider-2.png" alt=""></li>
+              <li class="splide__slide"><img src="./img/slider-3.png" alt=""></li>
+              <li class="splide__slide"><img src="./img/slider-4.png" alt=""></li>
+              <li class="splide__slide"><img src="./img/slider-5.png" alt=""></li>
+            </ul>
+          </div>
+        </section>
+    </section>
+
   </main>
 
   <script src="./script.js"></script>
-
+  <script src="./splide/dist/js/splide.min.js"></script>
+  <script>
+    document.addEventListener( 'DOMContentLoaded', function() {
+      var splide = new Splide( '.splide', {
+      type : 'loop',
+      perPage: 2,
+      perMove: 1,
+      arrows: false
+    });
+    splide.mount();
+   });
+  </script>
 </body>
 
 </html>
