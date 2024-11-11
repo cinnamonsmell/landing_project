@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "TT hoves", sans-serif;
+
 }
 #hello {
   padding: 37px 121px 160px;
@@ -218,7 +219,7 @@ h4 {
   width: 36px;
 }
 
-.exp span {
+span {
   font-size: calc(16px + (21 - 16) * ((100vw - 375px) / (1280 - 375)));
   line-height: 140%;
 }
@@ -419,12 +420,71 @@ h4 {
   line-height: 118%;
 }
 
-span {
-  font-size: calc(16px + (21 - 16) * ((100vw - 375px) / (1280 - 375)));
-  line-height: 140%;
+
+/* 13 экран. Всё ещё сомневаешься?*/
+.splide__slide :nth-child(3) {
+  width: 507px;
 }
 
 
+/* 14 экран. Запишись на курс*/
+ #goCourse {
+  background-color: #222222;
+}
+
+.joinUs {
+  display: flex;
+}
+
+.signUp h2 {
+  color: white;
+}
+
+.youGet span {
+  color: white;
+}
+
+.youGet span:first-of-type{
+  text-transform: uppercase;
+}
+
+#courseForm {
+  background-color: white;
+  width: 475px;
+  height: 600px;
+}
+
+#courseForm :nth-child(3) {
+  text-align: center;
+}
+.discount {
+  
+}
+
+.request {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 118%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contacts {
+  text-align: center;
+  font-size: 18px;
+  line-height: 118%;
+}
+.contacts span:first-child {
+  font-weight: 600;
+}
+.contacts span:last-child {
+  white-space: pre-line;
+}
+
+
+
+
+/* Медиазапросы */
 @media (max-width: 710px) {
   .diploma {
     grid-template-columns: 1fr;
