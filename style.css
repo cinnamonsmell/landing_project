@@ -249,6 +249,7 @@ span {
   padding-bottom: calc(23px + (35 - 23) * ((100vw - 375px) / (1280 - 375)));
   padding-right: calc(20px + (52 - 20) * ((100vw - 375px) / (1280 - 375)));
   padding-left: calc(20px + (60 - 20) * ((100vw - 375px) / (1280 - 375)));
+  margin-bottom: 30px;
 
   position: relative;
 }
@@ -260,31 +261,31 @@ span {
   right: -2px;
 }
 
-.programBorder h2 {
-  padding-bottom: 16px;
-}
-
 .lessons {
   list-style-type: none;
-  padding-bottom: calc(24px + (34 - 24) * ((100vw - 375px) / (1280 - 375)));
-}
-
-.lesson {
-  padding: 24px 0 24px 0;
-  border-bottom: 1px solid #a1a1a1;
+  margin-top: calc(24px + (34 - 24) * ((100vw - 375px) / (1280 - 375)));
+  margin-bottom: calc(0px + (34 - 0) * ((100vw - 375px) / (1280 - 375)));
   font-size: calc(16px + (21 - 16) * ((100vw - 375px) / (1280 - 375)));
   line-height: 140%;
 }
 
-.desktop {
+.lesson {
+  padding: 24px 0;
+  border-bottom: 1px solid #a1a1a1;
+}
+
+.program button {
   display: block;
   margin: 0 auto;
+}
+
+.desktop {
+  display: block;
   width: 428px;
 }
 
 .mobile {
-  display: none;
-  margin: 30px auto;
+  display: none !important;
   width: 328px;
 }
 
@@ -430,21 +431,40 @@ span {
 /* 14 экран. Запишись на курс*/
  #goCourse {
   background-color: #222222;
+
 }
 
 .joinUs {
   display: flex;
 }
 
+.signUp {
+  margin-top: 80px;
+  margin-right: 140px;
+}
+
 .signUp h2 {
   color: white;
+  max-width: 424px;
+}
+
+.study {
+  margin-top: 79px;
+}
+
+.youGet {
+  padding-bottom: 24px;
+}
+
+.youGet img {
+  margin-right: 20px;
 }
 
 .youGet span {
   color: white;
 }
 
-.youGet span:first-of-type{
+.youGet span :first-of-type {
   text-transform: uppercase;
 }
 
@@ -452,20 +472,26 @@ span {
   background-color: white;
   width: 475px;
   height: 600px;
+  margin-top: 100px;
+  margin-bottom: 80px;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
 }
 
-#courseForm :nth-child(3) {
-  text-align: center;
-}
-.discount {
-  
+#discount{
+  width: calc(105px + (159 - 105) * ((100vw - 375px) / (1280 - 375)));
+  top: -61px;
+  left: -67px;
+  position: absolute;
 }
 
 .request {
-  font-size: 30px;
+  font-size: calc(26px + (30 - 26) * ((100vw - 375px) / (1280 - 375)));
   font-weight: 700;
   line-height: 118%;
-  text-align: center;
+  margin-top: 60px;
+  
   text-transform: uppercase;
 }
 
@@ -473,6 +499,7 @@ span {
   text-align: center;
   font-size: 18px;
   line-height: 118%;
+  color: #222222a6;
 }
 .contacts span:first-child {
   font-weight: 600;
@@ -499,19 +526,15 @@ span {
   }
 
   .desktop {
-    display: none;
+    display: none !important;
   }
 
   .mobile {
-    display: block;
+    display: block !important;
   }
 
   .lesson:last-child {
-    border-bottom: none;
-  }
-
-  .programBorder {
-    padding: 40px 28px 0 20px;
+    border: 0;
   }
 
   .bonus {
